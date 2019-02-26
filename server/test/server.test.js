@@ -10,7 +10,7 @@ describe('GET / -> Comprobamos que el servidor fucniona', () => {
             .expect(200) //comprobamos estatus de la peticion
             .expect(res => { //comprobamos la respuesta del servidor
                 const {message} = res.body;
-                expect(message).toBe('Funciona!!!!')
+                expect(message).toBe('Funciona!')
             })
             .end((err, res) =>{
                 //compruebo los estados del server o la base de datos

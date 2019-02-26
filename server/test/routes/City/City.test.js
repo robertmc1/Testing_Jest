@@ -1,5 +1,8 @@
 const request = require('supertest');
-const server = require('../app');
+const server = require('../../../app');
+const {citiesData, populateCities} = require ('./City.seed');
+
+// populateCities();
 
 describe('/city', () => {
 
@@ -14,10 +17,10 @@ describe('/city', () => {
 
         });
 
-     /*   it('should return 201 w/data', (done) => {
+        it('should return 201 w/data', (done) => {
            request(server)
                .post(baseURL)
-               .setHeaderValue('Authorization', 'token')
+               .set('Authorization', 'token')
                .send({
                    //... body que le enviamos
                })
@@ -30,6 +33,5 @@ describe('/city', () => {
                    done(err)
                })
         });
-        */
     });
 });
