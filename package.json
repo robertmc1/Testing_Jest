@@ -17,10 +17,13 @@
     "supertest": "^3.4.2"
   },
   "dependencies": {
+    "app-root-path": "^2.1.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongodb": "^3.1.13",
     "mongoose": "^5.4.15",
-    "validator": "^10.11.0"
+    "morgan": "^1.9.1",
+    "validator": "^10.11.0",
+    "winston": "^3.2.1"
   }
 }
