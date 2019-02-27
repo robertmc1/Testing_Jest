@@ -9,6 +9,8 @@ router.get('/', (req, res) => {
     }
 });
 
-router.use('./*city', require('./city'));
+router.use('/*city', require('./city'));
+router.use('/*email', require('./email'));
+
 
 module.exports = router;
